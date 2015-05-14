@@ -1,0 +1,106 @@
+﻿/*=====================
+BEGIN TEAMMEMBER CODING
+=====================*/
+
+/*
+body 
+{
+	background-color:#00cc66;
+}
+*/
+
+#page  
+{
+	width : 799px; 
+	padding: 0;
+	margin: 0;
+	margin-left : auto; 
+	margin-right : auto; 
+	background-color: #FDFCDC;
+	/*-moz-box-shadow: -4px -4px 6px #FCF6CF;*/
+ 	/*filter:progid:DXImageTransform.Microsoft.Shadow(color=#888888, direction=315, strength=6);*/
+ 	 
+} 
+
+#bottom
+{
+	padding-left: 2px;
+	padding-top: 10px;
+	width : 799px; 
+	margin-left : auto; 
+	margin-right : auto; 
+}
+
+#copyright  
+{
+	font-family: Tahoma;
+	float : left; 
+	text-align : left; 
+	font-size : 10px; 
+	color : white;
+} 
+
+#legal  
+{
+	font-family: Tahoma;
+	float : right; 
+	text-align : right; 
+	font-size : 10px; 
+	color : white; 
+} 
+
+#legal a  
+{
+	font-family: Tahoma;
+	font-size : 10px; 
+	color : white; 
+} 
+
+/*=====================
+END TEAMMEMBER CODING
+=====================*/
+
+
+img.border1
+{
+    border: 1px MediumAquamarine solid;
+}
+
+img.border2
+{
+    border: 1px #371C00 solid;
+}
+
+table
+{
+    font-family: Tahoma;
+    font-size: 12px;
+    font-weight:bold;
+}
+
+p 
+{
+    font-family: Tahoma;
+    font-size: 12px;
+	text-align: center;
+}
+
+/*links*/
+a.nav:link { 
+	color: white;
+	text-decoration: none
+	}
+a.nav:visited { 
+	color: white;
+	text-decoration: none
+	}
+a.nav:hover { 
+	color: yellow;
+	text-decoration: none
+	/*background-color: #333333;
+	text-decoration: none;*/
+	}
+/*a.nav:active { 
+	color: #333333;
+	}
+*/

@@ -1,0 +1,151 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <%--<title>Untitled Page</title>--%>
+    <!--Original template by TeamMember-->
+    <!--Menu resized by TeamMember to fit on one line-->
+    <!--Code to check for login and hide menu by TeamMember-->
+    <asp:ContentPlaceHolder id="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="Synergy.css" /> 
+    <style type="text/css">
+        .style2
+        {
+            text-align: center;
+        }
+        </style>
+</head>
+
+<body bgcolor="#66CDAA">
+    <div id="page">
+        <table width="100%" bgcolor="#371C00">
+            <tr>
+            <td valign="middle" width="75%">    
+            </td>
+            <td align="right">
+                
+                <% If Session("User") <> "" Then%>
+                     <a href="http://localhost/orderhistory.aspx" class="nav">Order History</a> &nbsp;&nbsp;
+                     <a href="http://localhost/loggedout.aspx" class="nav">Logout</a>                     
+                <%  End If%>
+                
+                <% If Session("User") = "" Then%>
+                   <a href="register.aspx" class="nav">Register &nbsp; &nbsp; &nbsp;</a>
+                   <a href="http://localhost/login.aspx" class="nav">Login</a>                     
+                <%  End If%>        
+                
+                
+                
+
+                
+            </td>
+            </tr>
+        </table>
+        <div class="style2">
+
+                        <img src="http://localhost/images/LogoHalfSize.gif" alt="Logo"/>
+                        
+            <br />
+            
+            <table width="100%" bgcolor="#371C00">
+            <tr>
+            <td valign="middle"><a href="http://localhost/Default.aspx" class="nav">Home</a></td>
+            <td valign="middle"><a href="http://localhost/products.aspx" class="nav">Products</a></td>
+            <td><a href="http://localhost/about.aspx" class="nav">About Us</a></td>
+            
+           
+            <td><a href="http://localhost/cart.aspx" class="nav">View Cart</a></td>
+            <td><a href="http://localhost/map.aspx" class="nav">Site Map</a></td>
+            <td width="1%">
+            <br />           
+            <br />
+            </td>
+            </tr>
+            </table>
+            <p></p>
+            
+            <form id="form1" runat="server">
+            <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+            </p>
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    
+            <table width="100%" bgcolor="#371C00">
+            <tr>
+            <td>
+                <a href="https://www.blogger.com/start" target="_blank">
+                <img alt="Blogger" src="http://localhost/images/icons/blogger.jpg"
+                    style="width: 25px; height: 25px" class="border1"/>
+                </a>
+                
+                <a href="https://secure.delicious.com/login?jump=ub" target="_blank">
+                <img alt="Delicious" src="http://localhost/images/icons/delicious.jpg" 
+                    style="width: 25px; height: 25px" class="border1" />
+                </a>
+                
+                <a href="http://digg.com/login" target="_blank"> 
+                <img alt="Digg" src="http://localhost/images/icons/digg.jpg" style="width: 25px; height: 25px" 
+                    class="border1" />
+                </a>
+                
+                <a href="https://login.facebook.com/login.php" target="_blank">
+                <img alt="Facebook" src="http://localhost/images/icons/facebook.jpg" 
+                    style="width: 25px; height: 25px" class="border1" />
+                </a>
+                
+                <a href="http://www.myspace.com/" target="_blank">
+                <img alt="Myspace" src="http://localhost/images/icons/myspace.jpg" 
+                    style="width: 25px; height: 25px" class="border1" />
+                </a>
+                
+                <a href="http://www.reddit.com/login" target="_blank">
+                <img alt="Reddit" src="http://localhost/images/icons/reddit.jpg" 
+                    style="width: 25px; height: 25px" class="border1" />
+                </a>
+                
+                <a href="http://www.stumbleupon.com/login.php" target="_blank">
+                <img alt="Stumbleupon" src="http://localhost/images/icons/stumbleupon.jpg" 
+                    style="width: 25px; height: 25px" class="border1" />
+                </a>
+                
+                <a href="https://twitter.com/login" target="_blank">
+                <img alt="Twitter" src="http://localhost/images/icons/twitter.jpg" 
+                    style="width: 25px; height: 25px" class="border1" />
+                </a>    
+            </td>    
+            </tr>
+<%--            <tr>
+                <td>
+                <a href="map.aspx" class="nav">Site Map</a>
+                </td>
+            </tr>--%>
+            </table>
+            <br />
+    
+    
+    
+    
+            </div>
+
+</div>
+<div id="bottom">
+<div id="copyright">Copyright &copy; 2010 Team (####) Inc.</div>
+<div id="legal">This site is a class project for 
+    <a href="http://localhost">CLASS ####</a> at 
+    <a href="http://www.unt.edu">UNT</a><br />
+    <a href="http://localhost/privacy.aspx">Privacy Policy</a></div>
+</div>
+
+
+</body>
+</html>
